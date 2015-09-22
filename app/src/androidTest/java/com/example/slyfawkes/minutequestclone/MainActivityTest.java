@@ -1,8 +1,6 @@
 package com.example.slyfawkes.minutequestclone;
 
 import android.test.ActivityInstrumentationTestCase2;
-import android.widget.ListView;
-import android.widget.TextView;
 
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 

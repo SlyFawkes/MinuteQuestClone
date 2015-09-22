@@ -10,4 +10,5 @@
         <item>Credits</item>
         <item>Exit</item>
     </string-array>
+    <string name="title_activity_game">GameActivity</string>
 </resources>

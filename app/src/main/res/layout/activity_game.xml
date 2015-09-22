@@ -1,0 +1,25 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/separator"
+        android:layout_centerVertical="true"
+        android:layout_width="0"
+        android:layout_height="0"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
+        android:name="com.example.slyfawkes.minutequestclone.GameActivityFragment"
+        tools:layout="@layout/fragment_game_info" android:layout_width="match_parent"
+        android:layout_height="fill_parent" android:layout_above="@id/separator" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment2"
+        android:name="com.example.slyfawkes.minutequestclone.GameActivityFragment"
+        tools:layout="@layout/fragment_game_info" android:layout_width="match_parent"
+        android:layout_height="fill_parent" android:layout_below="@id/separator" />
+
+</RelativeLayout>
