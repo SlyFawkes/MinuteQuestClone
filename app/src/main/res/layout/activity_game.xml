@@ -7,8 +7,8 @@
     <View
         android:id="@+id/separator"
         android:layout_centerVertical="true"
-        android:layout_width="0"
-        android:layout_height="0"/>
+        android:layout_width="0px"
+        android:layout_height="0px"/>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
