@@ -9,7 +9,7 @@
         xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
         android:name="com.example.slyfawkes.minutequestclone.GameActivityFragment"
         tools:layout="@layout/sample_game_view" android:layout_width="fill_parent"
-        android:layout_height="fill_parent" android:layout_weight="1"/>
+        android:layout_height="fill_parent" android:layout_weight="2"/>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment2"
