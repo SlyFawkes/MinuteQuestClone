@@ -8,12 +8,12 @@
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
         android:name="com.example.slyfawkes.minutequestclone.GameActivityFragment"
-        tools:layout="@layout/fragment_game_info" android:layout_width="fill_parent"
+        tools:layout="@layout/sample_game_view" android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:layout_weight="1"/>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment2"
-        android:name="com.example.slyfawkes.minutequestclone.GameActivityFragment"
+        android:name="com.example.slyfawkes.minutequestclone.GameInfoFragment"
         tools:layout="@layout/fragment_game_info" android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:layout_weight="1"/>
 

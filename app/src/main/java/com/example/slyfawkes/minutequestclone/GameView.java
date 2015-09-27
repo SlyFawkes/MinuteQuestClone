@@ -73,7 +73,7 @@ public class GameView extends View {
 
     private void invalidateTextPaintAndMeasurements() {
         mTextPaint.setTextSize(mExampleDimension);
-        mTextPaint.setColor(mExampleColor);
+        mTextPaint.setColor(getResources().getColor(R.color.white));
         mTextWidth = mTextPaint.measureText(mExampleString);
 
         Paint.FontMetrics fontMetrics = mTextPaint.getFontMetrics();
@@ -86,9 +86,9 @@ public class GameView extends View {
 
         // TODO: consider storing these as member variables to reduce
         // allocations per draw cycle.
-        int paddingLeft = getPaddingLeft();
+        int paddingLeft = getPaddingStart();
         int paddingTop = getPaddingTop();
-        int paddingRight = getPaddingRight();
+        int paddingRight = getPaddingEnd();
         int paddingBottom = getPaddingBottom();
 
         int contentWidth = getWidth() - paddingLeft - paddingRight;

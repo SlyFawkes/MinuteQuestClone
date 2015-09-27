@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class GameActivityFragment extends Fragment {
+public class GameInfoFragment extends Fragment {
 
-    public GameActivityFragment() {
+    public GameInfoFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.sample_game_view, container, false);
+        return inflater.inflate(R.layout.fragment_game_info, container, false);
     }
 }
