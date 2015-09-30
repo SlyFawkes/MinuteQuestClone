@@ -9,6 +9,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -29,12 +30,24 @@ public class GameView extends View {
     public void onDraw(Canvas canvas) {
         paint.setColor(Color.GREEN);
         canvas.drawRect(startx, starty, endx, endy, paint);
-        startx += 10;
-        starty += 10;
-        endx += 10;
-        endy += 10;
-        //Toast toast = Toast.makeText(getContext(), "drawing things", Toast.LENGTH_SHORT);
-        //toast.show();
-        invalidate();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent ev) {
+        switch (ev.getAction()) {
+
+            case MotionEvent.ACTION_DOWN: {
+                startx++;
+                endx++;
+                invalidate();
+
+                break;
+            }
+
+            case MotionEvent.ACTION_UP: {
+                break;
+            }
+        }
+        return true;
     }
 }
