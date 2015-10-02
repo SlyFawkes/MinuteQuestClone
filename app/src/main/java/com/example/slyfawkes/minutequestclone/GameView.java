@@ -1,22 +1,17 @@
 package com.example.slyfawkes.minutequestclone;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 public class GameView extends View {
 
     Paint paint = new Paint();
-    //Rect rect = new Rect(0,0,100,100);
     int startx = 0;
     int starty = 0;
     int endy = 100;
@@ -33,7 +28,7 @@ public class GameView extends View {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent ev) {
+    public boolean onTouchEvent(@NonNull MotionEvent ev) {
         switch (ev.getAction()) {
 
             case MotionEvent.ACTION_DOWN: {
