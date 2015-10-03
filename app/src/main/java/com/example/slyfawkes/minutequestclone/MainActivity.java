@@ -28,8 +28,16 @@ public class MainActivity extends Activity {
                     case "New Game":
                         Intent i = new Intent(getApplicationContext(), GameActivity.class);
                         startActivity(i);
+                    case "Exit":
+                        finish();
                 }
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        android.os.Process.killProcess(android.os.Process.myPid());
+        super.onDestroy();
     }
 }
