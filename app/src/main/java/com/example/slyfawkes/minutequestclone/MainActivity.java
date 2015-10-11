@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
         ListView optionsListView = (ListView)findViewById(R.id.listview);
 
         optionsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -33,11 +34,5 @@ public class MainActivity extends Activity {
                 }
             }
         });
-    }
-
-    @Override
-    protected void onDestroy() {
-        android.os.Process.killProcess(android.os.Process.myPid());
-        super.onDestroy();
     }
 }
